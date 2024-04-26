@@ -1,0 +1,213 @@
+\documentclass[a4paper]{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newfloat}
+\usepackage{listings}
+\usepackage{microtype}
+
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+
+\urlstyle{same}
+\lstset{%
+    basicstyle=\ttfamily,
+    breaklines=true,
+    breakautoindent=false,
+    breakindent=0pt
+}
+\DeclareFloatingEnvironment[%
+    listname={List of Prompts},
+    name=Prompt,
+    placement=tbh,
+    within=section
+]{prompt}
+\DeclareFloatingEnvironment[%
+    listname={List of Stories},
+    name=Story,
+    placement=ht,
+    within=section
+]{story}
+
+\title{%
+Supplementary Materials \\ 
+``Is Temperature the Creativity Parameter of Large Language Models?''}
+\author{Max Peeperkorn, Tom Kouwenhoven, Dan Brown, Anna Jordanous}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document entails the supplementary material / appendix to go with the paper ``Is Temperature the Creativity for Large Language Models'' by Max Peeperkorn, Tom Kouwenhoven, Dan Brown, and Anna Jordanous. The paper will appear at the 15\textsuperscript{th} International Conference on Computational Creativity (ICCC) held in J\"onk\"oping, Sweden from 17 to 21 June 2024. Additionally, there is a repository that contains the code, statistical analysis, data, and generated stories, and the latest version of this document. The repository can be found at \url{https://github.com/maxpeeperkorn/the-creativity-parameter}.
+\end{abstract}
+    
+\appendix
+
+\section{Questionnaire}\label{app:questionnaire}
+The questionnaire consists of three parts. The first part contains the questions for the creativity evaluation, followed by questions regarding the participants' creative interests and their stance towards generative AI.
+Questions are presented on a five-point scale unless stated otherwise.
+Note that in the survey, we use `exemplar story' to denote the exemplar story. However, the principle of the evaluation task remains identical.
+
+\subsection*{Evaluation Questions}
+\begin{itemize}
+    \item To what extent is the above story novel compared to the prototype story?
+    \item To what extent is the above story typical compared to the prototype story?
+    \item To what extent is the above story consistent (e.g. sentences are connected and characters, events and actions are used appropriately)?
+    \item To what extent is it easy or difficult to follow and understand the above story?
+\end{itemize}
+
+\subsection*{Post-Evaluation Questions}
+\begin{itemize}
+    \item[\tiny$\bullet$] [open question] Can you describe your experience with writing (short) stories, if any?
+    \item[\tiny$\bullet$] [open question] Can you describe your experience with reviewing things you have read, if any?
+    \item How familiar are you with generative AI?
+    \item How comfortable are you with generative AI being used in creative works, such as art, music,
+and writing?
+    \item[\tiny$\bullet$] [open question] Do you have any comments on how you approached evaluating the stories in this study?
+\end{itemize}
+
+\subsection*{Definitions}
+\begin{itemize}
+\item \textbf{Novelty}: A story is novel if it has something new or unusual. 
+\item \textbf{Typicality}: A story is considered typical if it exhibits essential characteristics of a story.
+\item \textbf{Cohesion}: A story is cohesive if the use of words and sentences are grammatically consistent. Characters, events, and actions are used appropriately.
+\item \textbf{Coherence}: A story is coherent if it is easy to follow and understand its meaning.
+\end{itemize}
+\vfill
+
+\newpage
+\section{Stories and Prompt}
+
+\begin{prompt}[!ht]
+    \small
+    \begin{lstlisting}
+    [INST]Write a story.[/INST]Here it is:\n\n
+    \end{lstlisting}
+    \caption{The exact \textsc{Llama 2-Chat} prompt, showing the chat formatting and the suffix to make sure the model starts writing the story immediately.}\label{fig:exact-llama-2-prompt}
+\end{prompt}
+
+
+\subsection*{The Exemplar Story}\label{app:exemplar-story}
+
+\sffamily
+\small
+\vspace{1ex}
+Once upon a time, there was a young girl named Maria. She lived in a small village nestled in the rolling hills of the countryside. Maria was a curious and adventurous child, always eager to explore the world around her.
+\vspace{1ex}
+
+\hspace{10pt} One day, while wandering through the village, Maria stumbled upon a hidden path she had never seen before. The path was overgrown with weeds and vines, and it looked as though it hadn't been used in years.
+\vspace{1ex}
+
+\hspace{10pt} Without hesitation, Maria decided to follow the path. She pushed aside the branches and vines, and began to walk down the winding trail. The path led her through the forest, and the trees grew taller and closer together as she walked.
+\vspace{1ex}
+
+\hspace{10pt} As she continued on, Maria began to notice strange markings on the trees. They were unlike anything she had ever seen before - strange symbols and patterns that seemed to glow in the fading light of day.
+\vspace{1ex}
+
+\hspace{10pt} Maria's curiosity grew with each step, and she quickened her pace. She knew that she had to find out what these markings meant.
+\vspace{1ex}
+
+\hspace{10pt} After a while, the path opened up into a clearing. In the center of the clearing stood an enormous tree, its trunk twisted and gnarled with age. The symbols and patterns that Maria had seen on the other trees were etched into the bark of this tree as well, but they were even more intricate and complex.
+\vspace{1ex}
+
+\hspace{10pt} Maria approached the tree, her heart pounding with excitement. As she reached out to touch the bark, a voice boomed from within the tree.
+\vspace{1ex}
+
+\hspace{10pt} ``Who dares to disturb the resting place of the ancient ones?'' it said.
+\vspace{1ex}
+
+\hspace{10pt} Maria was startled, but she stood her ground. ``I'm just a curious child,'' she said. ``I didn't mean to disturb anyone.''
+\vspace{1ex}
+
+\hspace{10pt} There was a long silence, and then the voice spoke again. ``You have been chosen to receive a great gift,'' it said. ``Are you willing to accept it?''
+\vspace{1ex}
+
+\hspace{10pt} Maria nodded eagerly, and the tree began to glow with a soft, golden light. The symbols and patterns on the bark began to move and shift, and Maria felt a strange energy coursing through her body.
+\vspace{1ex}
+
+\hspace{10pt} When the light faded, Maria found that she had been given the power to communicate with the spirits of the forest. From that day on, she used her gift to help the villagers and the forest creatures, and she lived a long and happy life filled with wonder and adventure.
+\vspace{1ex}
+
+\hspace{10pt} The end.
+\vspace{2ex}
+
+\rmfamily
+
+\newpage
+\subsection*{Example Story ($t = 1.0$)}\label{app:example-t1}
+
+\sffamily
+\small
+
+\vspace{1ex}
+The sun was setting, and a group of friends had gathered on the beach to watch it go down. They sat in comfortable silence, each lost in their own thoughts, as the sky transformed into a canvas of pink, orange, and purple hues.
+\vspace{1ex}
+
+\hspace{10pt} Suddenly, a young boy appeared, walking towards them from the water's edge. He was dripping wet, and his eyes were wide with excitement.
+\vspace{1ex}
+
+\hspace{10pt} ``What did you find, little man?'' one of the friends asked, as the boy approached.
+\vspace{1ex}
+
+\hspace{10pt} ``I found a message in a bottle!'' the boy exclaimed, holding up a glass bottle with a piece of paper inside.
+\vspace{1ex}
+
+\hspace{10pt} ``To whoever finds this, 
+\vspace{1ex}
+
+\hspace{10pt} I hope this message finds you well. My name is Sarah, and I'm a pirate. I've been sailing the seas for years, searching for treasure and adventure. I've seen so many amazing things, from dolphins playing in the waves to fierce storms that threaten to sink my ship.
+\vspace{1ex}
+
+\hspace{10pt} But the best part of my journey has been the people I've met along the way. I've made friends with merchants, fishermen, and even other pirates. We've shared stories, laughed together, and sometimes, we've even saved each other's lives.
+\vspace{1ex}
+
+\hspace{10pt} I'm writing this message in a bottle, hoping that it will find its way to someone who will appreciate the adventure and camaraderie that comes with life on the high seas.
+\vspace{1ex}
+
+\hspace{10pt} If you're reading this, I hope you'll take a moment to think about the amazing things you've experienced in your own life. And if you're feeling adventurous, maybe you'll even decide to set sail and see what wonders the world has in store for you.
+\vspace{1ex}
+
+\hspace{10pt} Fair winds, Sarah the Pirate''
+\vspace{1ex}
+
+\hspace{10pt} The group of friends sat in silence for a moment, taking in the message. Then, they all started talking at once, sharing their own stories of adventure and camaraderie. They laughed and reminisced, feeling grateful for the chance to share their experiences with each other.
+\vspace{1ex}
+
+\hspace{10pt} As the sun dipped below the horizon, the group of friends raised their glasses (filled with whatever drink they had on hand) in a toast to Sarah the Pirate, to adventure, and to the magic of messages in bottles. And who knows, maybe one day, they'll even set sail themselves, following in Sarah's footsteps and creating their own stories of adventure and friendship.
+\rmfamily
+
+\newpage
+\subsection*{Example Story ($t = 2.0$)}\label{app:example-t2}
+
+\sffamily
+\small
+
+
+Once upon a time, there was a beautiful young woman named Anastasia. She was smart, kind, and full of life, with long brown hair, deep blue eyes, and a bright, radiant smile. Ana was a gentle soul, loved by all who knew her, and she spent her days helping those in need. \vspace{1ex}
+
+\hspace{10pt} One day, while out on a walk, Ana stumbled upon a hidden path she had never seen before. Curious, she decided to follow it, and it led her to a clearing surrounded by tall trees. In the center of the clearing was a beautiful, ancient-looking statue of a woman. Ana felt drawn to the statue and walked closer to examine it. As she reached out to touch it, she suddenly felt a strange sensation, like a jolt of electricity running through her body.\vspace{1ex}
+
+\hspace{10pt} When the sensation passed, Ana found that she was no longer alone. A handsome young man stood before her, dressed in clothing unlike anything she had ever seen. He introduced himself as Mikhail, and Ana was struck by his kind eyes, sharp jawline, and charming smile. Mikhail told Ana that he was a guardian, sent to watch over the statue and protect it from those who would misuse its power.\vspace{1ex}
+
+\hspace{10pt} Ana was fascinated, and asked Mikhail to tell her more. He explained that the statue was a symbol of love and hope, and that it had been placed there by a wise queen centuries ago. The queen had imbued the statue with magical powers, which would grant the deepest desires of those who approached it with a pure heart. But, Mikhail warned, the statue also had the power to bring great destruction if used by those with malicious intent.\vspace{1ex}
+
+\hspace{10pt} Ana was amazed by the story, and felt honored to have been chosen to meet Mikhail and learn about the statue's secrets. She knew that she had always had a pure heart, and she longed to help others, so she asked Mikhail if she could stay and help him protect the statue.\vspace{1ex}
+
+\hspace{10pt} Mikhail agreed, and together they worked to keep the statue safe from those who would misuse its power. Over time, Ana and Mikhail grew closer, and they realized they had fallen in love.\vspace{1ex}
+
+\hspace{10pt} Years passed, and their love only grew stronger. They were happy, but they knew their time together was limited, for Mikhail's duty as guardian was eternal, and Ana could not stay with him forever.\vspace{1ex}
+
+\hspace{10pt} One day, a wicked sorcerer appeared, seeking to use the statue's power to gain control over the kingdom. Mikhail fought bravely, but the sorcerer was too strong. Ana knew she had to do something, and with a burst of courage, she stepped forward and touched the statue.\vspace{1ex}
+
+\hspace{10pt} The sorcerer was repelled, and as he fled, Ana realized that she had been granted the statue's power. She felt a surge of strength, and knew that she could now help Mikhail protect the statue, and the kingdom, from any harm that might come.\vspace{1ex}
+
+\hspace{10pt} Ana and Mikhail spent their days watching over the statue, using its power for good, and spreading love and hope throughout the land. They knew they would always be together, bound by their love for each other, and their duty to protect the magical statue and all it represented.\vspace{1ex}
+
+\hspace{10pt} And so, they lived happily ever after, surrounded by the magic and beauty of the ancient statue, and the love that they shared.
+
+\rmfamily
+
+\end{document}
