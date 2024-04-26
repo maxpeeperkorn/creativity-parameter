@@ -1,4 +1,4 @@
-# Is Temperature the Creativity for Large Language Models
+# Is Temperature the Creativity for Large Language Models?
 
 This repository contains the supplementary material / appendix to go with the paper “Is Temperature the Creativity for Large Language Models” by Max Peeperkorn, Tom Kouwenhoven, Dan Brown, and Anna Jordanous. 
 
