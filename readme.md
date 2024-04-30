@@ -19,14 +19,14 @@ In the `analysis.ipynb` notebook you will find the statistical analysis and the 
 Ensure that you have some version of [Llama 2 Chat](https://github.com/Meta-Llama/llama) downloaded. This project uses [llama.cpp](https://github.com/ggerganov/llama.cpp), you will need to convert model to `.guff` format (and perhaps quantise if necessary, we opted for `q6_k` setting). The script expects the following folder structure: `models/llama-2-70b-chat/ggml-model-f16.gguf`. 
 
 ```bash
-python scripts/temperatures.py --experiment_name temperatures --model_name llama-2-70B-chat --n 100 \ 
+python scripts/temperatures.py --experiment_name temperatures --model_name llama-2-70b-chat --n 100 \ 
     --temp_min 0.001 --temp_max 2.0 --temp_n 7 --temp_scale "lin" --prompt "Write a story."
 ```
 
 When computing the embeddings, enter the model name and experiment output file you want to process, it will create a new pickle that includes the embedding vectors.
 
 ```bash
-python scripts/compute_embeddings.py --experiment_path "output/temperatures.pickle" --model_name llama-2-70B-chat  
+python scripts/compute_embeddings.py --experiment_path "output/temperatures.pickle" --model_name llama-2-70b-chat  
 ```
 
 ## Cite
