@@ -1,3 +1,25 @@
 [project]
-name = "the-creativity-parameter"
-version = "0.0.1"
+name = "creativity-parameter"
+description = "Supplementary Materials for the paper \"Is Temperature the Creativity for Large Language Models?\""
+version = "1.0.0"
+maintainers = [{ name = "Max Peeperkorn", email = "m.peeperkorn@kent.ac.uk" }]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "BSD-3-Clause License" }
+keywords = [
+    "large language models",
+    "temperature",
+    "creativity",
+    "narrative generation",
+    "randomness",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fire==0.5.0",
+    "llama_cpp_python==0.2.32",
+    "matplotlib==3.8.2",
+    "pandas==2.1.4",
+    "pingouin==0.5.4",
+    "seaborn==0.13.0",
+    "statsmodels==0.14.1",
+    "tqdm==4.66.1",
+]
