@@ -14,7 +14,7 @@ In the `scripts` folder, you will find the code we used to generated the stories
 
 In the `analysis.ipynb` notebook you will find the statistical analysis and the code that generated the figures in the paper.
 
-## How get run the code?
+## How to run the code?
 
 Ensure that you have some version of [Llama 2 Chat](https://github.com/Meta-Llama/llama) downloaded. This project uses [llama.cpp](https://github.com/ggerganov/llama.cpp), you will need to convert model to `.guff` format (and perhaps quantise if necessary, we opted for `q6_k` setting). The script expects the following folder structure: `models/llama-2-70b-chat/ggml-model-f16.gguf`. 
 
