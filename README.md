@@ -31,4 +31,12 @@ python scripts/compute_embeddings.py --experiment_path "output/temperatures.pick
 
 ## Cite
 
-Snippet to be added once published.
+```latex
+@inproceedings{peeperkorn-etal-2024,
+  title        = {Is Temperature the Creativity Parameter of Large Language Models?},
+  author       = {Max Peeperkorn and Tom Kouwenhoven and Dan Brown and Anna Jordanous},
+  booktitle    = {15th International Conference on Computational Creativity},
+  year         = {2024},
+  organization = {Association for Computational Creativity}
+}
+```
